@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: clean
+
+management:
+  datadog:
+    metrics:
+      export:
+        enabled: false
+
+feign:
+  convenios:
+    name: convenios
+    url: localhost:8080
+
+caching:
+  spring:
+    convenio:
+      tempo: 1000

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: clean-local
+
+management:
+  datadog:
+    metrics:
+      export:
+        enabled: true
+        uri: https://us5.datadoghq.com
+        application-key: ${DATADOG_APPLICATION_KEY}
+        api-key: ${DATADOG_APP_KEY}
